@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			.square {
+				padding: 1rem 2rem;
+				background-color: blue;
+			}
+
+			/* .square:hover {
+				opacity: 0.5;
+			} */
+		</style>
+	</head>
+	<body>
+		<button class="square" type="button">aa</button>
+
+		<script>
+			const square = document.querySelector(".square");
+
+			let alpha = 0;
+
+			square.addEventListener("pointerover", () => {
+				alpha += 10;
+				console.log(alpha);
+			});
+		</script>
+	</body>
+</html>
